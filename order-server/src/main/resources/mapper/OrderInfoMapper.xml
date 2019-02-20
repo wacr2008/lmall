@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.li.orderserver.mapper.OrderInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.li.orderserver.model.OrderInfo">
+        <id column="id" property="id" />
+        <result column="orderId" property="orderId" />
+        <result column="pay_method" property="payMethod" />
+        <result column="num" property="num" />
+        <result column="freight" property="freight" />
+        <result column="count_money" property="countMoney" />
+        <result column="state" property="state" />
+        <result column="pay_time" property="payTime" />
+        <result column="delivery_time" property="deliveryTime" />
+        <result column="receiving_time" property="receivingTime" />
+        <result column="is_comment" property="isComment" />
+        <result column="user_id" property="userId" />
+        <result column="goods_id" property="goodsId" />
+        <result column="address_id" property="addressId" />
+        <result column="createTime" property="createTime" />
+        <result column="updateTime" property="updateTime" />
+        <result column="del_flag" property="delFlag" />
+        <result column="specifications_info" property="specificationsInfo" />
+        <result column="goods_img" property="goodsImg" />
+        <result column="price" property="price" />
+        <result column="goods_title" property="goodsTitle" />
+        <result column="name" property="name" />
+        <result column="tel" property="tel" />
+        <result column="address" property="address" />
+
+    </resultMap>
+
+</mapper>

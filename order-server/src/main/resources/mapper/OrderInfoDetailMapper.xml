@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.li.orderserver.mapper.OrderInfoDetailMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.li.orderserver.model.OrderInfoDetail">
+        <id column="id" property="id" />
+        <result column="goods_id" property="goodsId" />
+        <result column="order_info_id" property="orderInfoId" />
+        <result column="num" property="num" />
+        <result column="title" property="title" />
+        <result column="price" property="price" />
+        <result column="count_money" property="countMoney" />
+        <result column="goods_img" property="goodsImg" />
+        <result column="specifications_info" property="specificationsInfo" />
+        <result column="createTime" property="createTime" />
+        <result column="updateTime" property="updateTime" />
+        <result column="del_flag" property="delFlag" />
+    </resultMap>
+
+</mapper>
