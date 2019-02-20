@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.li.userserver.mapper.ReceiverAddressMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.li.userserver.model.ReceiverAddress">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="tel" property="tel" />
+        <result column="province" property="province" />
+        <result column="city" property="city" />
+        <result column="county" property="county" />
+        <result column="addressDetail" property="addressDetail" />
+        <result column="postalCode" property="postalCode" />
+        <result column="isDefault" property="isDefault" />
+        <result column="user_id" property="userId" />
+        <result column="address" property="address" />
+    </resultMap>
+
+</mapper>
