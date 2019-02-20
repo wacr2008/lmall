@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.li.goodsserver.mapper.GoodsMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.li.goodsserver.model.Goods">
+        <id column="goodsId" property="goodsId" />
+        <result column="goodsName" property="goodsName" />
+        <result column="goodsDescribe" property="goodsDescribe" />
+        <result column="goodsPrice" property="goodsPrice" />
+        <result column="detailsShows" property="detailsShows" />
+        <result column="parameters" property="parameters" />
+        <result column="sellQuantity" property="sellQuantity" />
+        <result column="defaultShow" property="defaultShow" />
+        <result column="brand_id" property="brand_id" />
+        <result column="type_id" property="type_id" />
+    </resultMap>
+
+    <select id="selectHotGoods" resultMap="BaseResultMap">
+        SELECT goodsId,defaultShow,goodsName,goodsPrice FROM sys_goods ORDER BY sellQuantity DESC LIMIT 5
+    </select>
+
+</mapper>
