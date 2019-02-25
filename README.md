@@ -21,6 +21,6 @@
 6. 信息模块(message-server)
 7. 网关模块(zuul-server)
 
-
+![image](https://github.com/LiHaodong888/lmall/blob/master/images/index.jpg)
 
 
